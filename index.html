@@ -1,498 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    @import url('https://fonts.googleapis.com/css?family=PT+Sans');
+  <meta charset="utf-8">
+  <title>Roberto Barrera Portfolio</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
-/* CSS Variables */
-:root{
-	--primary-color:#b90415;
-	--primary-color-hover:#d3071b;
-	--secondary-color:#103063;
-	--secondary-color-hover:#143f85;
-	--light-color:#f4f4f4;
-}
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
-body {
-  font-family: 'PT Sans', sans-serif;
-  background-color: #252529;
-  margin: 0;
-  color:#fff;
-  line-height:1.6;
-}
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-img{
-	width: 100%
-}
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-a {
-	text-decoration: none;
-	color:#ccc;
-}
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
 
-/* Section */
-.section {
-	padding:2rem 0;
-}
-
-.section-head{
-	font-size:2.5rem;
-	margin:0;
-}
-
-.section h3{
-	font-size:2rem;
-}
-
-section#entertainment {
-	background:url('../img/section-bg.jpeg') no-repeat bottom/cover;
-	padding:10rem 0;
-}
-
-.gift-cards{
-	display:grid;
-	grid-gap:20px;
-	grid-template-columns: repeat(2, 1fr);
-	text-align:left;
-}
-
-/*Showcase*/
-#showcase{
-	margin:0;
-	padding:0;
-	background:url('../img/showcase.jpg') no-repeat center/cover;
-	width:100%;
-	height:100vh;
-	position:relative;
-	overflow-y:hidden;
-}
-
-#showcase .container{
-	margin-top:25vh;
-}
-
-#showcase h1{
-	font-size:4rem;
-	margin-bottom:0;
-}
-
-#showcase h2{
-	font-size:2rem
-}
-
-/* Footer */
-footer .footer-cols{
-	display:grid;
-	grid-gap:20px;
-	grid-template-columns:repeat(4, 1fr);
-	padding:2rem;
-	text-align:left;
-	font-size:14px;
-}
-
-footer .footer-cols ul{
-	list-style:none;
-}
-
-footer .footer-cols ul li:first-child{
-	font-size:1.2rem;
-	padding-bottom:0.5rem;
-	border-bottom:#444 solid 1px;
-	margin-bottom:1rem;
-}
-
-footer .footer-bottom{
-	background:#333;
-	padding:1rem;
-}
-
-/*Utility Classes*/
-.container{
-	max-width:1180px;
-	text-align: center;
-	margin:0 auto;
-	padding:0 3rem;
-}
-
-.lead{
-	font-size:1.3rem;
-}
-
-.text-center{
-	text-align:center;
-}
-
-/* Buttons */ 
-.btn {
-	padding: 1rem;
-	color:#fff;
-	display:inline-block;
-}
-
-.btn-primary{
-	background:var(--primary-color);
-}
-
-.btn-primary:hover{
-	background: var(--primary-color-hover);
-}
-
-.btn-secondary{
-	background:var(--secondary-color);
-}
-
-.btn-secondary:hover{
-	background: var(--secondary-color-hover);
-}
-
-/*Text colors*/
-.text-primary{
-	color:var(--primary-color);
-}
-
-.text-secondary{
-	color:var(--secondary-color);
-}
-
-.text-light{
-	color:var(--light-color);
-}
-
-.bg-light{
-	background:var(--light-color);
-	color:#333;
-}
-
-.mb{
-	margin-bottom:1rem;
-}
-
-.mt{
-	margin-top:1rem;
-}
-/*Navigation*/
-nav {
-  height: 40px;
-  width: 100%;
-  background-color: #333;
-  color: #eee;
-  position:fixed;
-}
-  nav ul {
-  padding: 0;
-	margin: 0;
-  }
-
-  nav li {
-    display: inline;
-    
-  }
-
-  nav a {
-  	display: inline-block;
-	  width: 100px;
-	  text-align: center;
-	  text-decoration: none;
-	  padding: 10px 0;
-    color: #eee;
-    text-decoration:none;  
-  }
-
-  nav li:hover {
-    background-color: #444;
-  }
-
-  nav a#openup {
-	  display: none;
-  }
-
-
-@media screen and (max-width: 580px) {
-	.hide-on-small{
-		display:none;
-	}
-
-	#showcase{
-		height:50vh;
-	}
-
-	#showcase .container{
-		margin-top:15vh;
-	}
-
-	#showcase h1 {
-		font-size:3rem;
-	}
-
-	#showcase h2{
-		font-size:1.5rem;
-	}
-
-  h1 {
-	  font-size: 2.8em;
-  }
-
-  nav {
-		height: auto;
-		border-bottom: 0;
-  }
-	  ul {
-		  display: none;
-		  height: auto;
-	  }	
-	
-	  li {
-		  width: 100%;
-		  float: left;
-		  position: relative;
-    }
-
-  	a {
-	  	text-align: left;
-	  	width: 100%;
-	  	text-indent: 25px;
-			background: red;	 
-      border-bottom: 1px solid red;
-  	}  	
-	
-  	 a:hover {
-	  	background: red;
-  	}
-
-	  a#openup:after {
-          
-	 content:"|||";
-      transform:rotate(-90deg);
-      -ms-transform:rotate(-90deg); 
-      /* IE 9 */
-      -webkit-transform:rotate(-90deg); 
-          /* Safari and Chrome */
-		  width: 30px;
-		  height: 30px;
-		  display: inline-block;
-		  position: absolute;
-		  right: 5px;
-		  top: 20px;
-	  }
-  	  		
-	  a#openup {
-		  display: block;
-		  background-color: red;
-		  width: 100%;
-		  position: relative;
-	  }
-  } /*nav*/
- /* media*/
-
-.cf:before, .cf:after { content:""; display:table; }
-.cf:after { clear:both; }
-.cf { zoom:1; } 
-
-@media screen and (max-width: 780px){
-	.gift-cards{
-		grid-template-columns:1fr;
-	}
-
-	footer .footer-cols{
-		display:none;
-	}
-}
-
-@media screen and (max-height: 580px){
-	#showcase p.lead{
-		display:none;
-	}
-}
-    <title>Welcome to myTunes</title>
+  <!-- =======================================================
+    Theme Name: DevFolio
+    Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
 </head>
-<body>
-    <!--Showcase & Nav-->
-    <div id="showcase">
-        <header>
-            <nav class='cf'>
-                <ul class='cf'>
-                    <li>
-                    <a href="#showcase">myTunes</a>
-                    </li>
-                    <li>
-                    <a href='#showcase'>Overview</a>
-                    </li>
-                    <li>
-                    <a href='#music'>Music</a>
-                    </li>
-                    <li>
-                    <a href='#video'>Video</a>
-                    </li>
-                    <li>
-                    <a href='#gift-cards'>Gift Cards</a>
-                    </li>
-                </ul>
-                    <a href='#' id='openup'>myTunes</a>
 
-                    <div class="hamburger"></div>
-                    <div class="hamburger" ></div>
-                    <div class="hamburger"></div>
-            </nav>
-        </header>
-        <div class="section-main container">
-            <h1>myTunes.</h1>
-            <h2>Your music, movies, and TV shows take center stage.</h2>
-            <p class="lead hide-on-small">
-                myTunes is the best way to organize and enjoy the music, movies, and TV shows you already have and shop for the ones you want. Enjoy all the entertainmnet myTunes has to offer on you Mac and PC. 
-            </p>
-        </div>
+<body id="page-top">
+
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link js-scroll" href="#portfolio">Portfolio</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link js-scroll" href="https://my.indeed.com/p/robertob-lb1cd30"> Resume</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
+  <!--/ Nav End /-->
 
-    <!--Music Section-->
-    <section id="music" class="section">
+  <!--/ Intro Skew Star /-->
+  <div id="home" class="intro route bg-image" style="background-image: url(img/background.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
         <div class="container">
-            <h2 class="section-head">
-                <i class="fas fa-music"></i> Music
-            </h2>
-            <h3>45 million songs. Zero ads. </h3>
-            <p class="lead">Stream over 45 millon songs, ad-free. Or download albums and tracks to listen to offline. All the music in your personal myTunes library - no matter where it came from - lives right alongside the Orange Music catalog. Start your free three-month trial with no comitment, and cancel anytime. </p>
-            <a href="#" class="btn btn-primary mb">Start Your Trial Now</a>
-            <p class="text-light">Orange Music is available in myTunes, and for iOS and Android devices.</p>
-            <img src="img/mockup1.png" alt="">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="intro-title mb-4">Hello my name is Roberto Barrera</h1>
+          <p class="intro-subtitle"><span class="text-slider-items">Web Developer,Web Designer,Frontend Developer,Graphic Designer</span><strong class="text-slider"></strong></p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
 
-    <!--Video Section-->
-    <section id="video" class="section bg-light">
-        <div class="container">
-            <h3>The movie and TV collection you always wished for. Granted.</h3>
-            <p class="lead">
-                With over 100,00 movies and TV shows to choose from, there's always something great to watch on myTunes and if you watch on Orange TV 4K, you'll be able to enjoy a tremendous selection of your favorite content in 4K HDR. So get ready to enjoy episodes of your favorite TV shows or hit movies you've been waiting to see - anytime, anywhere. Just tap to play, or even download if you're going somewhere you won't have Wi-Fi.  
-            </p>
-            <a href="#" class="btn btn-secondary">Read More</a>
-            <img src="img/mockup2.png" alt="">
-        </div>
-    </section>
-
-    <!--Entertainment Section-->
-    <section id="entertainment" class="section">
-        <div class="container">
-            <h3>A world of entertainment. Available wherever you are.</h3>
-            <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nam nemo, quae sapiente voluptas quis, voluptatem temporibus officia facere, delectus corporis repudiandae sunt reprehenderit! Nemo maiores distinctio omnis, ratione perspiciatis consectetur illo dolorum optio beatae, neque id eveniet cum culpa!</p>
-        </div>
-    </section>
-
-    <!--Gift Card Section-->
-    <section id="gift-cards" class="section bg-light">
-        <div class="container">
-            <div class="gift-cards">
-                <div>
-                    <img src="img/cards.png" alt="">
+<!-- Intro Skew End /-->
+  <section class="services-mf route"></section>
+  <div class="section-counter paralax-mf bg-image" style="background-image: url(img/counters-bg.jpg)">
+    <div class="overlay-mf"></div>
+      <div class="container">      
+              <div id="about" class="col-sm-12">
+                <div class="box-shadow-full">
+                  <h1>About Me</h1>
+                  <p>
+      
+                  </p>
+                  <p>I am a self-taught web developer.  I describe myself as a developer who loves coding, open source, and the web platform.  In my spare time I like to create and contribute to open source projects. That helps me to learn a lots of new stuff, grow as a developer and support other open source projects. Also, I enjoy writing at my blog and going to developer meetups and conferences around Chicago. </p>
                 </div>
-                <div>
-                    <h2>Gift Cards</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci et accusantium quaerat maxime esse saepe at reiciendis voluptatem ut voluptatum, nulla in necessitatibus assumenda veritatis? Nam illum reprehenderit dolorum consequatur alias animi facilis culpa nulla porro quo. Excepturi, magni natus?    
+              </div>
+    </div> 
+  </div>
+
+  <!--/ Section Portfolio Star /-->
+  <section class="portfolio-mf sect-pt4 route">
+    <div id="portfolio" class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Portfolio
+            </h3>
+            <h4 class="subtitle-a">
+              Check out some of my projects below!
+            </h4>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/work-1.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/work-1.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Landing Page</h2>
+                    <div class="w-more">
+                        <span class="w-ctegory">Web Design</span> / <span class="w-date">Back End Stack</span>
+                      </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/work-2.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/work-2.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Ecommerce Site</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">Back End Stack</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/work-3.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/work-3.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Mavrito Lana Dere</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/work-4.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/work-4.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Bindo Laro Cado</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/work-5.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/work-5.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Studio Lena Mado</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/work-6.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/work-6.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Studio Big Bang</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2017</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!--/ Section Portfolio End /-->
+ 
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10">
+          <div class="contact-mf">
+            <div id="contact" class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      Send a Message
+                    </h5>
+                  </div>
+                  <div>
+                      <form action="" method="post" role="form" class="contactForm">
+                      <div id="sendmessage">Your message has been sent. Thank you!</div>
+                      <div id="errormessage"></div>
+                      <div class="row">
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                            <div class="validation"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                            <div class="validation"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                              <div class="validation"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                            <div class="validation"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="title-box-2 pt-4 pt-md-0">
+                    <h5 class="title-left">
+                      Get in Touch
+                    </h5>
+                  </div>
+                  <div class="more-info">
+                    <p class="lead">
+                      Please feel free to send me a message to inquire more about my skills as a web developer. I look forward to hearing from you! Thank you!
+                     
                     </p>
-                    <p>Already have an Orange MyTunes Music Gift Card?</p>
-                    <hr>
-                    <a href="" class="text-secondary">
-                        <i class="fas fa-chevron-right"></i>Redeem
-                    </a>
+                    <ul class="list-ico">
+                      <li><span class="ion-ios-location"></span> Waukegan, IL 60085</li>
+                      <li><span class="ion-ios-telephone"></span> (224) 637-7929</li>
+                      <li><span class="ion-email"></span> rbarrera1991@outlook.com</li>
+                    </ul>
+                  </div>
+                  <div class="socials">
+                    <ul>
+                      <li><a href=""><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
+                      <li><a href=""><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
+                      <li><a href=""><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>
+                      <li><a href=""><span class="ico-circle"><i class="ion-social-pinterest"></i></span></a></li>
+                    </ul>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-
-    <!--Footer-->
+      </div>
+    </div>
     <footer>
-        <div class="container">
-            <div class="footer-cols">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="copyright-box">
+              <p class="copyright">&copy; Copyright <strong>Roberto Barrera</strong>. All Rights Reserved</p>
+              <div class="credits">
+                <!--
+                  All the links in the footer should remain intact.
+                  You can delete the links only if you purchased the pro version.
+                  Licensing information: https://bootstrapmade.com/license/
+                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+                -->
 
-                <ul>
-                    <li>Shop & Learn</li>
-                    <li>
-                        <a href="#">Music</a>
-                    </li>
-                    <li>
-                        <a href="#">Movies</a>
-                    </li>
-                    <li>
-                        <a href="#">Shows</a>
-                    </li>
-                    <li>
-                        <a href="#">Apps</a>
-                    </li>
-                    <li>
-                        <a href="#">Gift Cards</a>
-                    </li>
-                </ul>
-
-                <ul>
-                    <li>Shop & Learn</li>
-                    <li>
-                        <a href="#">Find a Store</a>
-                    </li>
-                    <li>
-                        <a href="#">Workday at Orange</a>
-                    </li>
-                    <li>
-                        <a href="#">Orange Camp</a>
-                    </li>
-                    <li>
-                        <a href="#">Financing</a>
-                    </li>
-                    <li>
-                        <a href="#">Order Status</a>
-                    </li>
-                </ul>
-
-                <ul>
-                    <li>Education & Business</li>
-                    <li>
-                        <a href="#">Orange & Education</a>
-                    </li>
-                    <li>
-                        <a href="#">Shop For College</a>
-                    </li>
-                    <li>
-                        <a href="#">Orange & Business</a>
-                    </li>
-                    <li>
-                        <a href="#">Shop For Business</a>
-                    </li>
-                    <li>
-                        <a href="#">Jobs</a>
-                    </li>
-                </ul>
-
-                <ul>
-                    <li>About Orange</li>
-                    <li>
-                        <a href="#">Newsroom</a>
-                    </li>
-                    <li>
-                        <a href="#">Orange Leadership</a>
-                    </li>
-                    <li>
-                        <a href="#">Investors</a>
-                    </li>
-                    <li>
-                        <a href="#">Events</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact Orange</a>
-                    </li>
-                </ul>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="footer-bottom text-center">
-            Copyright &copy; 2018 Orange myTunes
-        </div>
+      </div>
     </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
 
-    <script
-    src="http://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
 </body>
 </html>
